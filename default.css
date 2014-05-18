@@ -1,9 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
 body {
 	margin-top: 8px;
 	padding: 0;
 	background-image: url('images/background.jpg');
 	text-align: justify;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 14px;
 	color: #616161;
 }
@@ -32,11 +33,10 @@ a {
 }
 
 #header {
-    margin: 0 auto;
-    width: 90%;
-    min-width: 860px;
-    max-width: 1400px;
-    
+	margin: 0 auto;
+	width: 90%;
+	min-width: 860px;
+	max-width: 1400px;
 }
 
 #headerleft {
@@ -54,7 +54,7 @@ a {
 }
 
 #logo {
-    width:100%;
+	width: 100%;
 	height: 125px;
 	border: 0;
 	border-collapse: collapse;
@@ -78,7 +78,7 @@ a {
 	padding: 25px 20% 0 10px;
 	letter-spacing: -1px;
 	font-weight: normal;
-	font-size: 2.8em;
+	font-size: 2.5em;
 }
 
 #logo p {
@@ -94,134 +94,149 @@ a {
 	color: #FFFFFF;
 }
 
+/* Menu CSS */
+#menu, #menu ul, #menu ul li, #menu ul li a {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#menu:before, #menu:after, #menu > ul:before, #menu > ul:after {
+	content: '';
+	display: table;
+}
+#menu:after, #menu > ul:after {
+	clear: both;
+}
 #menu {
+	zoom: 1;
+	height: 69px;
+	background: url(images/bottom-bg.png) repeat-x center bottom;
 	width: 90%;
-	height: 33px;
 	min-width: 860px;
-    max-width: 1400px;
+	max-width: 1400px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -4px;
 }
-
-#nav {
-	width: 100%;
+#menu ul {
+	background: url(images/nav-bg.png) repeat-x 0px 4px;
+	height: 69px;
+}
+#menu ul li {
 	float: left;
-	padding: 0;
 	list-style: none;
-	margin: 0;
-	background: url(images/gbimg02.jpg) repeat-x left top;
-	border: none;
 }
-
-#nav li {
-	float: left; 
-}
-
-#nav li a {
+#menu ul li a {
 	display: block;
-	padding: 8px 15px;
-	color:#FFFFFF;
+	height: 37px;
+	padding: 22px 30px 0;
+	margin: 4px 2px 0;
+	border-radius: 2px 2px 0 0;
 	text-decoration: none;
-	text-transform: uppercase;
-	font-family: Arvo, serif;
-	font-size: 14px;
-	font-weight: normal;
-	border-right: 1px solid #E0E0E0; 
+	font-size: 15px;
+	color: white;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+	font-weight: 400;
+	opacity: .9;
 }
-
-#nav #right {
-	border-right: none;
+#menu ul li:first-child a {
+	margin: 4px 2px 0 0;
 }
-
-#nav li a:hover {
-	text-decoration: none;
-	background: url(images/gbimg03.jpg) repeat-x left top;
+#menu ul li a:hover, #menu ul li.active a {
+	background: url(images/color.png) center bottom;
+	display: block;
+	height: 37px;
+	margin-top: 0px;
+	padding-top: 26px;
+	/*color: #004f7c;*/
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.55);
+	opacity: 1;
 }
 
 #page-wrapper {
 	margin-left: auto;
 	margin-right: auto;
-	width:90%;
-    overflow: hidden;
+	width: 90%;
+	overflow: hidden;
 	min-width: 860px;
-    max-width: 1400px;
+	max-width: 1400px;
 	background: #E0E0E0;
-    position: relative;
+	position: relative;
 }
 
 #sidebar-wrapper {
-    width: 30%;
-    float: right;
-    /*padding: 30px 30px 30px 15px;*/
+	width: 30%;
+	float: right;
+	/*padding: 30px 30px 30px 15px;*/
 }
 
 #sidebar {
 	height: 600px;
-    margin: 30px 30px 30px 15px;
+	margin: 30px 30px 30px 15px;
 }
 
 #content-wrapper {
 	width: 70%;
-    float: left;
+	float: left;
 }
 
 #content {
-    margin: 30px 15px 30px 30px;
-    overflow: hidden;
+	margin: 30px 15px 30px 30px;
+	overflow: hidden;
 }
 
 .block {
-    position: relative;
+	position: relative;
 }
 
 .block:hover .icon {
-    display: block;
+	display: block;
 }
 
 .icon {
-    position : absolute;
-    display:none;
-    bottom: 5px;
-    width:40px;
-    margin:0 0;
-    right:5px;
-    z-index:100
+	position: absolute;
+	display: none;
+	bottom: 5px;
+	width: 40px;
+	margin: 0 0;
+	right: 5px;
+	z-index: 100
 }
 
 #first-block {
-    text-align: center;
-    clear: both;
-    height: auto;
-    margin: 0 15px 0 0;
+	text-align: center;
+	clear: both;
+	height: auto;
+	margin: 0 15px 0 0;
 }
 
 #news-block {
-    text-align: center;
-    clear: both;
-    height: auto;
-    margin: 20px 15px 0 0;
+	text-align: center;
+	clear: both;
+	height: auto;
+	margin: 20px 15px 0 0;
 }
 
 #trello-block {
-    text-align: center;
-    clear: both;
-    height: auto;
-    margin: 20px 15px 0 0;
+	text-align: center;
+	clear: both;
+	height: auto;
+	margin: 20px 15px 0 0;
 }
 
 #calendar-block {
-    text-align: center;
-    clear: both;
-    background-color: #a9a9a9;
-    height: auto;
-    margin: 0 0 0 15px;
+	text-align: center;
+	clear: both;
+	background-color: #a9a9a9;
+	height: auto;
+	margin: 0 0 0 15px;
 }
 
 #calendar-block p {
-    margin: 0;
-    padding: 5px 0 5px 0;
-    color: white;
-    vertical-align: middle;
+	margin: 0;
+	padding: 5px 0 5px 0;
+	color: white;
+	vertical-align: middle;
 }
 
 #calendar-block:hover {
@@ -229,130 +244,127 @@ a {
 }
 
 #calendar-block .today {
-    font-size: 5em;
+	font-size: 5em;
 }
 
 #calendar-block .title {
-    font-size: 3.0em;
+	font-size: 3.0em;
 }
 
 #calendar-block .time {
-    font-size: 2.0em;
+	font-size: 2.0em;
 }
 
 #contact-block {
-    text-align: center;
-    clear: both;
-    background-color: #B0E8B0;
-    height: 245px;
-    margin: 20px 0 0 20px;
+	text-align: center;
+	clear: both;
+	background-color: #B0E8B0;
+	height: 245px;
+	margin: 20px 0 0 20px;
 }
 
 #first-column {
-    width: 50%;
-    float: left;
+	width: 50%;
+	float: left;
 }
 
 #first-column img {
-    max-width: 100%;
-    max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #second-column {
-    width: 50%;
-    float: left;
+	width: 50%;
+	float: left;
 }
 
 #second-column img {
-    max-width: 100%;
-    max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
-
 #footer {
-    background: #c2c2c2;
-    height: 500px;
+	background: #c2c2c2;
+	height: 500px;
 }
 
 #content-wrapper p {
-    margin: 0;
+	margin: 0;
 }
 
 #popup-background {
-    z-index:1;
-    position: fixed;
-    display:none;
-    height:100%;
-    width:100%;
-    background:#000000;
-    top:0px;
-    left:0px;
+	z-index: 1;
+	position: fixed;
+	display: none;
+	height: 100%;
+	width: 100%;
+	background: #000000;
+	top: 0px;
+	left: 0px;
 }
 
 #popup-wrapper {
-    background: #E0E0E0;
-    border: 10px solid #ccc;
-    border-radius: 3px 3px 3px 3px;
-    display: none;
-    font-size: 14px;
-    left: 50%;
-    margin-left: -42%;
-    top: 8%;
-    position: fixed;
-    width: 80%;
-    height: 80%;
-    z-index: 2;
+	background: #E0E0E0;
+	border: 10px solid #ccc;
+	border-radius: 3px 3px 3px 3px;
+	display: none;
+	font-size: 14px;
+	left: 50%;
+	margin-left: -42%;
+	top: 8%;
+	position: fixed;
+	width: 80%;
+	height: 80%;
+	z-index: 2;
 }
 
 #popup-wrapper div.close {
-    background: url("images/closebox.png") no-repeat scroll 0 0 transparent;
-    bottom: 24px;
-    cursor: pointer;
-    float: right;
-    height: 30px;
-    left: 27px;
-    position: relative;
-    width: 30px;
+	background: url("images/closebox.png") no-repeat scroll 0 0 transparent;
+	bottom: 24px;
+	cursor: pointer;
+	float: right;
+	height: 30px;
+	left: 27px;
+	position: relative;
+	width: 30px;
 }
 
 #popup-wrapper span.close-tooltip {
-    background: none repeat scroll 0 0 #000000;
-    border-radius: 2px 2px 2px 2px;
-    color: #FFFFFF;
-    display: none;
-    font-size: 11px;
-    height: 16px;
-    opacity: 0.7;
-    padding: 4px 3px 2px 5px;
-    position: absolute;
-    right: -62px;
-    text-align: center;
-    top: -51px;
-    width: 93px;
+	background: none repeat scroll 0 0 #000000;
+	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	display: none;
+	font-size: 11px;
+	height: 16px;
+	opacity: 0.7;
+	padding: 4px 3px 2px 5px;
+	position: absolute;
+	right: -62px;
+	text-align: center;
+	top: -51px;
+	width: 93px;
 }
 
 #popup-wrapper span.arrow {
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 7px solid #000000;
-    display: block;
-    height: 1px;
-    left: 40px;
-    position: relative;
-    top: 3px;
-    width: 1px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 7px solid #000000;
+	display: block;
+	height: 1px;
+	left: 40px;
+	position: relative;
+	top: 3px;
+	width: 1px;
 }
 
 #popup-wrapper div#popup {
-    height: 100%;
+	height: 100%;
 }
 
 #calendar {
-    margin: -1px 0 0 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+	margin: -1px 0 0 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
-
-
 

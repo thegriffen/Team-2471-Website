@@ -38,14 +38,14 @@
 		
 		<!--Menu-->
 		<div id="menu">
-			<ul id="nav">
-				<li><a href="index.php?page=Home">Home</a></li>
-				<li><a href="index.php?page=About%20Us">About Us</a></li>
-				<li><a href="index.php?page=Resources">Resources</a></li>
-				<li><a href="index.php?page=Media%20Gallery">Media Gallery</a></li>
-				<li><a id="right" href="index.php?page=Sponsor">Sponsor</a></li>
+			<ul>
+			   <li class='<?php if($pagename == "Home") echo "active";?>' ><a href='index.php?page=Home'><span>Home</span></a></li>
+			   <li class='<?php if($pagename == "About Us") echo "active";?>' ><a href='index.php?page=About%20Us'><span>About Us</span></a></li>
+			   <li class='<?php if($pagename == "Resources") echo "active";?>' ><a href='index.php?page=Resources'><span>Resources</span></a></li>
+			   <li class='<?php if($pagename == "Media Gallery") echo "active";?>' ><a href='index.php?page=Media%20Gallery'><span>Media Gallery</span></a></li>
+			   <li class='last, <?php if($pagename == "Sponsor") echo "active";?>'><a href='index.php?page=Sponsor'><span>Sponsor</span></a></li>
 			</ul>
-		</div>
+			</div>
 		<!--End Menu-->        
         
 		
