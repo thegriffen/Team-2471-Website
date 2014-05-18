@@ -1,0 +1,358 @@
+body {
+	margin-top: 8px;
+	padding: 0;
+	background: #0c0a09;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #616161;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	color: #8C0209;
+}
+
+h1 {
+	font-size: 2.0em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #8C0209;
+}
+
+#header {
+    margin: 0 auto;
+    width: 90%;
+    min-width: 860px;
+    max-width: 1400px;
+    
+}
+
+#headerleft {
+	background: url(images/headerLeft.gif) no-repeat left top;
+	width: 11px;
+}
+
+#headermiddle {
+	background: url(images/headerMiddle.gif) repeat-x left top;
+}
+
+#headerright {
+	background: url(images/headerRight.gif) no-repeat right top;
+	width: 11px;
+}
+
+#logo {
+    width:100%;
+	height: 125px;
+	border: 0;
+	border-collapse: collapse;
+}
+
+#logo td, #logo th {
+	padding: 0;
+}
+
+#logo h1, #logo p {
+	float: left;
+	margin: 0;
+	color: #FFFFFF;
+}
+
+#logo img {
+	float: left;
+}
+
+#logo h1 {
+	padding: 25px 20% 0 10px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-size: 2.8em;
+}
+
+#logo p {
+	text-transform: uppercase;
+	padding: 5px 0 0 60px;
+	font-size: 12px;
+	color: #cccccc;
+}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu {
+	width: 90%;
+	height: 33px;
+	min-width: 860px;
+    max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav {
+	width: 100%;
+	float: left;
+	padding: 0;
+	list-style: none;
+	margin: 0;
+	background: url(images/gbimg02.jpg) repeat-x left top;
+	border: none;
+}
+
+#nav li {
+	float: left; 
+}
+
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	color:#FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arvo, serif;
+	font-size: 14px;
+	font-weight: normal;
+	border-right: 1px solid #E0E0E0; 
+}
+
+#nav #right {
+	border-right: none;
+}
+
+#nav li a:hover {
+	text-decoration: none;
+	background: url(images/gbimg03.jpg) repeat-x left top;
+}
+
+#page-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width:90%;
+    overflow: hidden;
+	min-width: 860px;
+    max-width: 1400px;
+	background: #E0E0E0;
+    position: relative;
+}
+
+#sidebar-wrapper {
+    width: 30%;
+    float: right;
+    /*padding: 30px 30px 30px 15px;*/
+}
+
+#sidebar {
+	height: 600px;
+    margin: 30px 30px 30px 15px;
+}
+
+#content-wrapper {
+	width: 70%;
+    float: left;
+}
+
+#content {
+    margin: 30px 15px 30px 30px;
+    overflow: hidden;
+}
+
+.block {
+    position: relative;
+}
+
+.block:hover .icon {
+    display: block;
+}
+
+.icon {
+    position : absolute;
+    display:none;
+    bottom: 5px;
+    width:40px;
+    margin:0 0;
+    right:5px;
+    z-index:100
+}
+
+#first-block {
+    text-align: center;
+    clear: both;
+    height: auto;
+    margin: 0 15px 0 0;
+}
+
+#news-block {
+    text-align: center;
+    clear: both;
+    height: auto;
+    margin: 20px 15px 0 0;
+}
+
+#trello-block {
+    text-align: center;
+    clear: both;
+    height: auto;
+    margin: 20px 15px 0 0;
+}
+
+#calendar-block {
+    text-align: center;
+    clear: both;
+    background-color: #a9a9a9;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+
+#calendar-block p {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    color: white;
+    vertical-align: middle;
+}
+
+#calendar-block:hover {
+
+}
+
+#calendar-block .today {
+    font-size: 5em;
+}
+
+#calendar-block .title {
+    font-size: 3.0em;
+}
+
+#calendar-block .time {
+    font-size: 2.0em;
+}
+
+#contact-block {
+    text-align: center;
+    clear: both;
+    background-color: #B0E8B0;
+    height: 245px;
+    margin: 20px 0 0 20px;
+}
+
+#first-column {
+    width: 50%;
+    float: left;
+}
+
+#first-column img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#second-column {
+    width: 50%;
+    float: left;
+}
+
+#second-column img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#footer {
+    background: #c2c2c2;
+    height: 500px;
+}
+
+#content-wrapper p {
+    margin: 0;
+}
+
+#popup-background {
+    z-index:1;
+    position: fixed;
+    display:none;
+    height:100%;
+    width:100%;
+    background:#000000;
+    top:0px;
+    left:0px;
+}
+
+#popup-wrapper {
+    background: #E0E0E0;
+    border: 10px solid #ccc;
+    border-radius: 3px 3px 3px 3px;
+    display: none;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -42%;
+    top: 8%;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    z-index: 2;
+}
+
+#popup-wrapper div.close {
+    background: url("images/closebox.png") no-repeat scroll 0 0 transparent;
+    bottom: 24px;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    left: 27px;
+    position: relative;
+    width: 30px;
+}
+
+#popup-wrapper span.close-tooltip {
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 11px;
+    height: 16px;
+    opacity: 0.7;
+    padding: 4px 3px 2px 5px;
+    position: absolute;
+    right: -62px;
+    text-align: center;
+    top: -51px;
+    width: 93px;
+}
+
+#popup-wrapper span.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #000000;
+    display: block;
+    height: 1px;
+    left: 40px;
+    position: relative;
+    top: 3px;
+    width: 1px;
+}
+
+#popup-wrapper div#popup {
+    height: 100%;
+}
+
+#calendar {
+    margin: -1px 0 0 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
