@@ -18,6 +18,24 @@
         
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/popup-script.js"></script>
+        
+        <script type="text/javascript">
+			$(window).bind("load", function() {
+				var stickyTop = $('#sidebar').offset().top;
+				$(window).scroll(function() {
+					var windowTop = $(window).scrollTop();
+					if (stickyTop < windowTop + 30) {
+						$('#sidebar').css({
+							position : 'fixed',
+							top : 0
+						});
+					} else {
+						$('#sidebar').css('position', 'static');
+					}
+				});
+			});
+		</script>
+
 	</head>
 	<body>
 		<!--Header-->
@@ -81,8 +99,20 @@
 			</div>
 		</div>
 		<!--End content-->
-<!--        <div id="footer">-->
-<!---->
-<!--        </div>-->
+		<div id="footer">
+			<table class="body">
+				<tr>
+					<td id="footerleft"></td>
+					<td id="footermiddle">
+					<p class="copyright">
+						&copy;&nbsp;&nbsp;2014 <a href="http://www.team2471.org">www.team2471.org</a> All Rights Reserved &nbsp;&nbsp;
+					</p>
+					<p style="float:left">
+						Want to Join? Email us at <a href="mailto:contactus@teammeanmachine.org">contactus@teammeanmachine.org</a>
+					</p></td>
+					<td id="footerright"></td>
+				</tr>
+			</table>
+		</div>
 	</body>
 </html>

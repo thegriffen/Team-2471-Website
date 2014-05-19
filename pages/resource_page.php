@@ -60,10 +60,10 @@
     </div>
     <div id="news-block" class="block">
         <div class="image">
-            <img src="images/newsletter.png">
+            <a href="content/Newsletter April-May 2014.pdf" target="_blank"><img src="images/newsletter.png"></a>
         </div>
         <div class="icon" class="block">
-            <img src="images/arrow_link.png">
+            <a href="content/Newsletter April-May 2014.pdf" target="_blank"><img src="images/arrow_link.png"></a>
         </div>
     </div>
     <div id="trello-block" class="block">

@@ -82,7 +82,6 @@ a {
 }
 
 #logo p {
-	text-transform: uppercase;
 	padding: 5px 0 0 60px;
 	font-size: 12px;
 	color: #cccccc;
@@ -167,7 +166,6 @@ a {
 #sidebar-wrapper {
 	width: 30%;
 	float: right;
-	/*padding: 30px 30px 30px 15px;*/
 }
 
 #sidebar {
@@ -283,11 +281,6 @@ a {
 	max-height: 100%;
 }
 
-#footer {
-	background: #c2c2c2;
-	height: 500px;
-}
-
 #content-wrapper p {
 	margin: 0;
 }
@@ -366,5 +359,61 @@ a {
 	padding: 0;
 	height: 100%;
 	width: 100%;
+}
+
+/* Footer */
+#footer {
+    width:90%;
+    min-width:860px;
+    max-width: 1400px;
+	margin: 0 auto;
+}
+
+#footerleft {
+	background: url(images/footerLeft.gif) no-repeat left top;
+	width: 11px;
+}
+
+#footermiddle {
+	background: url(images/footerMiddle.gif) repeat-x left top;
+}
+
+#footerright {
+	background: url(images/footerRight.gif) no-repeat right top;
+	width: 11px;
+}
+
+#footer .body {
+	width: 100%;
+	height: 70px;
+	padding: 0 0 0 0;
+	color: #FFFFFF;
+	border: 0;
+	border-collapse: collapse;
+}
+
+#footer .body td, #footer .body th {
+	padding: 0;
+}
+
+#footer .body p {
+	margin: 0;
+	padding: 10px 20px 0 20px;
+	text-align: center;
+	font-size: smaller;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#footer .body a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+#footer .body .link {
+	float: right;
+}
+
+#footer .body .copyright {
+	float: left;
 }
 
