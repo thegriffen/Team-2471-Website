@@ -417,3 +417,114 @@ a {
 	float: left;
 }
 
+
+/* Links */
+
+.linkcell {
+	width: 300px;
+	padding: 5px 20px 5px 20px;
+}
+
+.linkcell a {
+	font-size: 1.2em;
+}
+
+.Collage{
+
+    /*This is where you set the padding you want between the images*/
+    padding:5px;
+    text-align:center;
+
+}
+.Collage img{
+    margin:0;
+    padding:0;
+    display:inline-block;
+    vertical-align:bottom;
+    opacity:1;
+
+    /*This is where you set the border you want for the image*/
+    border:6px solid #A0A0A0;
+}
+
+
+/* In this example, this is the main item being resized */
+.Image_Wrapper{
+    /* to get the fade in effect, set opacity to 0 on the first element within the gallery area */
+/*    opacity:0;*/
+    -moz-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.Caption{
+    line-height:100%;
+    font-size:12px;
+    font-weight:normal;
+    font-family:arial, serif;
+}
+.Caption_Content{
+    /* padding:10px; */
+    color:#FFF;
+    padding:4px;
+}
+
+.effect-parent {
+    -webkit-perspective: 1300px;
+    -moz-perspective: 1300px;
+    perspective: 1300px;
+}
+
+
+
+.sponsor td {
+	text-align: center;
+	vertical-align:top;
+}
+
+.tablecenter td {
+	text-align:center;
+	vertical-align:middle;
+}
+
+#sponsortable {
+	width:100%;
+}
+
+#sponsortable.discription td {
+    vertical-align:top;   
+}
+
+#sponsortable th {
+	width:20%;
+	font: bold 16px "Trebuchet MS", Verdana, Arial, Helvetica,
+	sans-serif;
+	color: #FFFFFF;
+	border-right: 1px dashed black;
+	text-align: center;
+	padding: 6px 6px 6px 6px;
+	background: #890208;
+}
+
+
+#sponsortable td {
+	width:20%;
+	vertical-align:middle;
+	border-right: 1px dashed black;
+	background: #FFFFFF;
+	padding: 6px 6px 6px 6px;
+	color: #000000;
+	text-align:center;
+}
+
+#sponsortable .last {
+	border-right:none;
+}
+
+#sponsortable td.alt {
+	background: #A0A0A0;
+}
+

@@ -17,25 +17,14 @@
         <link href="default.css" rel="stylesheet" type="text/css">
         
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="scripts/popup-script.js"></script>
-        
-        <script type="text/javascript">
-			$(window).bind("load", function() {
-				var stickyTop = $('#sidebar').offset().top;
-				$(window).scroll(function() {
-					var windowTop = $(window).scrollTop();
-					if (stickyTop < windowTop + 30) {
-						$('#sidebar').css({
-							position : 'fixed',
-							top : 0
-						});
-					} else {
-						$('#sidebar').css('position', 'static');
-					}
-				});
+		<script type="text/javascript" src="scripts/sticky-kit.js"></script>
+        <!-- <script type="text/javascript" src="scripts/popup-script.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#sidebar").stick_in_parent({parent : '#page-wrapper'});
 			});
-		</script>
-
+		</script> -->
+		
 	</head>
 	<body>
 		<!--Header-->
