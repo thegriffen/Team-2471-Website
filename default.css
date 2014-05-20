@@ -417,6 +417,10 @@ a {
 	float: left;
 }
 
+#logos {
+	text-align: left;
+}
+
 .sponsor td {
 	text-align: center;
 	vertical-align:top;
