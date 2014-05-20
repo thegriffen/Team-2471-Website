@@ -18,8 +18,8 @@
         
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/sticky-kit.js"></script>
-        <!-- <script type="text/javascript" src="scripts/popup-script.js"></script>
-		<script type="text/javascript">
+        <script type="text/javascript" src="scripts/popup-script.js"></script>
+		<!-- <script type="text/javascript">
 			$(document).ready(function() {
 				$("#sidebar").stick_in_parent({parent : '#page-wrapper'});
 			});

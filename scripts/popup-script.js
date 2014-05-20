@@ -1,9 +1,6 @@
-/* 
- author: istockphp.com
- */
 jQuery(function($) {
 
-    $("a.topopup").click(function() {
+    $(".topopup").click(function() {
         loadPopup();
         return false;
     });
