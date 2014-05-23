@@ -5,7 +5,7 @@ body {
 	background-image: url('images/background.jpg');
 	text-align: justify;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #616161;
 }
 
@@ -35,8 +35,11 @@ a {
 #header {
 	margin: 0 auto;
 	width: 90%;
-	min-width: 860px;
-	max-width: 1400px;
+	max-width: 74em;
+}
+
+#header .short-name {
+	display: none;
 }
 
 #headerleft {
@@ -75,7 +78,7 @@ a {
 }
 
 #logo h1 {
-	padding: 25px 20% 0 10px;
+	padding: 25px 0 0 10px;
 	letter-spacing: -1px;
 	font-weight: normal;
 	font-size: 2.5em;
@@ -91,6 +94,10 @@ a {
 	border: none;
 	text-decoration: none;
 	color: #FFFFFF;
+}
+
+#logo .calendar {
+	float: right;
 }
 
 /* Menu CSS */
@@ -111,8 +118,7 @@ a {
 	height: 40px;
 	background: url(images/bottom-bg.png) repeat-x center bottom;
 	width: 90%;
-	min-width: 860px;
-	max-width: 1400px;
+	max-width: 74em;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -4px;
@@ -157,8 +163,7 @@ a {
 	margin-right: auto;
 	width: 90%;
 	overflow: hidden;
-	min-width: 860px;
-	max-width: 1400px;
+	max-width: 74em;
 	background: #E0E0E0;
 	position: relative;
 }
@@ -363,9 +368,8 @@ a {
 
 /* Footer */
 #footer {
-    width:90%;
-    min-width:860px;
-    max-width: 1400px;
+	width: 90%;
+	max-width: 74em;
 	margin: 0 auto;
 }
 
@@ -423,26 +427,25 @@ a {
 
 .sponsor td {
 	text-align: center;
-	vertical-align:top;
+	vertical-align: top;
 }
 
 .tablecenter td {
-	text-align:center;
-	vertical-align:middle;
+	text-align: center;
+	vertical-align: middle;
 }
 
 #sponsortable {
-	width:100%;
+	width: 100%;
 }
 
 #sponsortable.discription td {
-    vertical-align:top;   
+	vertical-align: top;
 }
 
 #sponsortable th {
-	width:20%;
-	font: bold 16px "Trebuchet MS", Verdana, Arial, Helvetica,
-	sans-serif;
+	width: 20%;
+	font: bold 16px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
 	border-right: 1px dashed black;
 	text-align: center;
@@ -450,21 +453,76 @@ a {
 	background: #890208;
 }
 
-
 #sponsortable td {
-	width:20%;
-	vertical-align:middle;
+	width: 20%;
+	vertical-align: middle;
 	border-right: 1px dashed black;
 	background: #FFFFFF;
 	padding: 6px 6px 6px 6px;
 	color: #000000;
-	text-align:center;
+	text-align: center;
 }
 
 #sponsortable .last {
-	border-right:none;
+	border-right: none;
 }
 
 #sponsortable td.alt {
 	background: #A0A0A0;
+}
+@media screen and (max-width: 48.125em) {
+	#sidebar-wrapper {
+		display: none;
+	}
+	#content-wrapper {
+		width: 100%;
+	}
+	#content {
+		width: auto;
+		margin: 0;
+		padding: 20px;
+	}
+	#page-wrapper {
+		width: 100%;
+		margin: 0;
+	}
+	#menu {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#header {
+		width: 100%;
+		margin: 0;
+	}
+	#footer {
+		width: 100%;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 43.313em) {
+	#header .full-name {
+		display: none;
+	}
+	#header .short-name {
+		display: block;
+	}
+	#header .desc {
+		display: none;
+	}
+}
+@media screen and (max-width: 41.25em) {
+	#menu {
+		display: none;
+	}
+	#header .short-name {
+		display: none;
+	}
+	#logo {
+		text-align: center;
+	}
+	#logo img {
+		float: none;
+		text-align: center;
+	}
 }

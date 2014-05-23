@@ -19,6 +19,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/sticky-kit.js"></script>
         <script type="text/javascript" src="scripts/popup-script.js"></script>
+        <meta name="viewport" content="width=device-width" />
 		<!-- <script type="text/javascript">
 			$(document).ready(function() {
 				$("#sidebar").stick_in_parent({parent : '#page-wrapper'});
@@ -33,9 +34,11 @@
 				<tr>
 					<td id="headerleft"></td>
 					<td id="headermiddle"><img src="images/MeanMachinelogo90px.png" alt="Mean Machine Logo" />
-						<h1><a href="index.php">FIRST Team 2471 Mean Machine</a></h1>
+						<h1 class="full-name"><a href="index.php">FIRST Team 2471 Mean Machine</a></h1>
+						<h1 class="short-name"><a href="index.php">Team Mean Machine</a></h1>
 						<br/>
-						<p><b>Robotics from Camas, Washougal, and Hockinson High Schools in Washington State</b></p>
+						<p class="desc"><b>Robotics from Camas, Washougal, and Hockinson High Schools in Washington State</b></p>
+						<div class="calendar"><?php include("scripts/calendar-parse.php"); calendarData(); ?></div>
 					</td>
 					<td id="headerright"></td>
 				</tr>
@@ -62,10 +65,6 @@
 				<div id="sidebar">
 					<a class="twitter-timeline" href="https://twitter.com/MeanMachine2471" data-widget-id="350758890092232704">Tweets by @MeanMachine2471</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<!--				</div>-->
-
-<!--                <div id="left">-->
-<!--                    <div id="sidebar2">Sidebar Text here!</div>-->
                 </div>
 
             </div>
