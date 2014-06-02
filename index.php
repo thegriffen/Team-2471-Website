@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="icon" type="image/png" href="images/favicon.png">
 		<?php
             $pagename = "";
             if($_REQUEST["page"]) {
@@ -17,7 +18,7 @@
         <link href="default.css" rel="stylesheet" type="text/css">
         
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/sticky-kit.js"></script>
+		<!-- <script type="text/javascript" src="scripts/sticky-kit.js"></script> -->
         <script type="text/javascript" src="scripts/popup-script.js"></script>
 		<!-- <script type="text/javascript">
 			$(document).ready(function() {
@@ -97,7 +98,7 @@
 						&copy;&nbsp;&nbsp;2014 <a href="http://www.team2471.org">www.team2471.org</a> All Rights Reserved &nbsp;&nbsp;
 					</p>
 					<p style="float:left">
-						Want to Join? Email us at <a href="mailto:contactus@teammeanmachine.org">contactus@teammeanmachine.org</a>
+						Want to Join? Email us at <a target="_blank" href="mailto:contactus@teammeanmachine.org">contactus@teammeanmachine.org</a>
 					</p></td>
 					<td id="footerright"></td>
 				</tr>

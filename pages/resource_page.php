@@ -54,7 +54,7 @@
         <div class="image">
             <a href="http://www.firstwa.org/" target="_blank"><img src="images/firstwa_logo.png"></a>
         </div>
-        <div class="icon" class="block">
+        <div class="icon">
             <a href="http://www.firstwa.org/" target="_blank"><img src="images/arrow_link.png"></a>
         </div>
     </div>
@@ -62,7 +62,7 @@
         <div class="image">
             <a href="content/Newsletter April-May 2014.pdf" target="_blank"><img src="images/newsletter.png"></a>
         </div>
-        <div class="icon" class="block">
+        <div class="icon">
             <a href="content/Newsletter April-May 2014.pdf" target="_blank"><img src="images/arrow_link.png"></a>
         </div>
     </div>
@@ -70,7 +70,7 @@
         <div class="image">
             <a href="https://trello.com/" target="_blank"><img src="images/trello_logo.png"></a>
         </div>
-        <div class="icon" class="block">
+        <div class="icon">
             <a href="https://trello.com/" target="_blank"><img src="images/arrow_link.png"></a>
         </div>
     </div>

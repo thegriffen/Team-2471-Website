@@ -201,11 +201,40 @@ a {
 	z-index: 100
 }
 
+.icon img {	
+	max-width: 100%;
+	max-height: 100%;
+}
+
 #first-block {
 	text-align: center;
 	clear: both;
 	height: auto;
 	margin: 0 15px 0 0;
+}
+
+#home-first {
+	width: 33%;
+	float: left;
+}
+
+#home-second {
+	width: 33%;	
+	float: left;
+}
+
+#home-third {
+	width: 33%;
+	float: left;
+}
+
+.home-block {
+	text-align: center;
+	font-size: 3.0em;
+	font-weight: bolder;
+	background-color: #B0E8B0;
+	height: 145px;
+	margin: 0 50px;
 }
 
 #news-block {
@@ -235,10 +264,6 @@ a {
 	padding: 5px 0 5px 0;
 	color: white;
 	vertical-align: middle;
-}
-
-#calendar-block:hover {
-
 }
 
 #calendar-block .today {
@@ -468,3 +493,4 @@ a {
 #sponsortable td.alt {
 	background: #A0A0A0;
 }
+
