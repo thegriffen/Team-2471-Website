@@ -196,7 +196,7 @@ a {
 	display: none;
 	bottom: 5px;
 	width: 40px;
-	margin: 0 0;
+	margin: 0;
 	right: 5px;
 	z-index: 100
 }
@@ -204,6 +204,21 @@ a {
 .icon img {	
 	max-width: 100%;
 	max-height: 100%;
+	display: block;
+}
+
+.block a {
+	margin: 0;
+	padding: 0;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 #first-block {
@@ -214,27 +229,38 @@ a {
 }
 
 #home-first {
-	width: 33%;
+	width: 27.15%;
 	float: left;
+	padding: 0 3.1%;
 }
 
 #home-second {
-	width: 33%;	
+	width: 27.0%;	
 	float: left;
+	padding: 0 3.1%;
 }
 
 #home-third {
-	width: 33%;
+	width: 27.15%;
 	float: left;
+	padding: 0 3.1%;
 }
 
 .home-block {
-	text-align: center;
-	font-size: 3.0em;
-	font-weight: bolder;
-	background-color: #B0E8B0;
+	font-size: 2.0em;
+	font-weight: bold;
+	background-image: url("images/texture.jpg");
+	box-shadow: 0 5px 5px #606060;
+	border-radius: 5px;
+	margin-bottom: 10px;
 	height: 145px;
-	margin: 0 50px;
+}
+
+.home-block .text {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle
 }
 
 #news-block {

@@ -17,7 +17,8 @@
 		<title><?php echo "$pagename - Team 2471"; ?></title>
         <link href="default.css" rel="stylesheet" type="text/css">
         
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+		<script src="scripts/jquery.min.js"></script>
 		<!-- <script type="text/javascript" src="scripts/sticky-kit.js"></script> -->
         <script type="text/javascript" src="scripts/popup-script.js"></script>
 		<!-- <script type="text/javascript">
