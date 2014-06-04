@@ -4,11 +4,11 @@
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<?php
             $pagename = "";
-            if($_REQUEST["page"]) {
+            if(isset($_GET["page"])) {
                 $pagename = $_GET["page"];
+            	$pagename = htmlspecialchars($pagename);
             }
 
-            $pagename = htmlspecialchars($pagename);
 
             if ($pagename == '') {
                 $pagename = "Home";
@@ -17,8 +17,8 @@
 		<title><?php echo "$pagename - Team 2471"; ?></title>
         <link href="default.css" rel="stylesheet" type="text/css">
         
-		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
-		<script src="scripts/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<!-- <script src="scripts/jquery.min.js"></script> -->
 		<!-- <script type="text/javascript" src="scripts/sticky-kit.js"></script> -->
         <script type="text/javascript" src="scripts/popup-script.js"></script>
 		<!-- <script type="text/javascript">
@@ -77,13 +77,17 @@
                         if($pagename == "Home") {
                             include("pages/home_page.html");
                         } elseif($pagename == "About Us") {
-                            include("pages/about_page.html");
+                            include("pages/about_page.php");
                         } elseif($pagename == "Resources") {
                             include("pages/resource_page.php");
                         } elseif($pagename == "Media Gallery") {
                             include("pages/media_page.html");
                         } elseif($pagename == "Sponsor") {
                             include("pages/sponsor_page.html");
+                        } elseif($pagename == "404") {
+                        	include("pages/404.html");
+                        } else {
+                        	include("pages/404.html");
                         }
                     ?>
                 </div>

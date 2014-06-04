@@ -5,8 +5,8 @@ body {
 	background-image: url('images/background.jpg');
 	text-align: justify;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	color: #616161;
+	font-size: 16px;
+	color: #303030;
 }
 
 h1, h2, h3 {
@@ -518,5 +518,139 @@ a.fill-div {
 
 #sponsortable td.alt {
 	background: #A0A0A0;
+}
+
+.media-block {
+	font-size: 2.0em;
+	font-weight: bold;
+	box-shadow: 0 5px 5px #606060;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	height: 180px;
+}
+
+.media-block .text {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle
+}
+
+#twitter {
+	height: auto;
+	border-radius: none;
+	box-shadow: none;
+}
+
+#twitter img.logo {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px #606060;
+}
+
+#youtube {
+	background-color: #F4F3F2;
+	text-align: center;
+	height: auto;
+}
+
+#youtube img.logo {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+#goolge-plus {
+	height: auto;
+	border-radius: none;
+	box-shadow: none;
+}
+
+#goolge-plus img.logo {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px #606060;
+}
+
+#facebook {
+	height: auto;
+	border-radius: none;
+	box-shadow: none;
+}
+
+#facebook img.logo {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px #606060;
+}
+
+.media-full {
+	width: 100%;
+	float: left;
+}
+
+.media-half {
+	width: 50%;
+	float: left;
+}
+
+.about-block {
+	font-size: 2.0em;
+	font-weight: bold;
+	box-shadow: 0 5px 5px #606060;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	height: 180px;
+}
+
+.about-block .text {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle
+}
+
+#about-team {
+	background-color: red;
+	height: 300px;
+}
+
+#about-mentors {
+	background-color: black;
+	color: white;
+	height: 225px;
+}
+
+#about-first {
+	background-color: white;
+	height: 225px;
+}
+
+#about-robots {
+	background-color: #A8A8A8;
+	height: 300px;
+}
+
+img.center {
+	display: block;
+	margin: 0 auto;
+}
+
+#team p {
+	padding: 10px 4.5%;
+}
+
+#team img {
+	padding: 10px 0;
 }
 
