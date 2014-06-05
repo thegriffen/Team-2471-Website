@@ -50,13 +50,13 @@
 
 
 <div id="first-column">
-    <div id="first-block" class="block">
-        <div class="image">
-            <a href="http://www.firstwa.org/" target="_blank"><img src="images/firstwa_logo.png"></a>
-        </div>
-        <div class="icon">
-            <a href="http://www.firstwa.org/" target="_blank"><img src="images/arrow_link.png"></a>
-        </div>
+    <div id="first-block" class="block image-block">
+    	<a href="http://www.firstwa.org/" target="_blank">
+            <img src="images/firstwa_logo.png" class="logo">
+	        <div class="icon">
+	            <img src="images/arrow_link.png">
+	        </div>
+        </a>
     </div>
     <div id="news-block" class="block">
         <div class="image">
@@ -78,19 +78,23 @@
 
 <div id="second-column">
     <div id="calendar-block" class="block">
-        <div class="image">
-            <a href="#" class="topopup"><p class="today">Today:</p>
-            <?php calendarData(); ?></a>
-        </div>
-        <div class="icon">
-            <a href="#"><img src="images/arrow_link.png"></a>
-        </div>
+    	<a href="#" class="topopup">
+	        <div class="image">
+	        	<p class="today">Today:</p>
+	            <?php calendarData(); ?>
+	        </div>
+	        <div class="icon">
+	            <img src="images/arrow_link.png">
+	        </div>
+        </a>
     </div>
-    <div id="contact-block" class="block">
-        <p>Contact</p>
-        <div class="icon">
-            <a href="#"><img src="images/arrow_link.png"></a>
-        </div>
+    <div id="contact-block" class="block image-block">
+        <a href="content/Contact.pdf" target="_blank" class="fill-div">
+        	<img src="images/contact us.jpg" class="logo">
+	        <div class="icon">
+	            <a href="#"><img src="images/arrow_link.png"></a>
+	        </div>
+        </a>
     </div>
 </div>
 

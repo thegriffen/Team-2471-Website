@@ -13,16 +13,16 @@
 	if ($subpage == 'home') {
 		include("pages/about_home.html");
 	}
-	elseif ($subpage == 'team') {
+	elseif ($subpage == 'About Team') {
 		include("pages/about_team.html");
 	}
-	elseif ($subpage == 'mentors') {
+	elseif ($subpage == 'About Mentors') {
 		include("pages/about_mentors.html");
 	}
-	elseif ($subpage == 'first') {
+	elseif ($subpage == 'About First') {
 		include("pages/about_first.html");
 	}
-	elseif ($subpage == 'robots') {
+	elseif ($subpage == 'About Robots') {
 		include("pages/about_robots.html");
 	}
 	else {

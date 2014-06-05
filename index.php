@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
 		<?php
             $pagename = "";
             if(isset($_GET["page"])) {
                 $pagename = $_GET["page"];
             	$pagename = htmlspecialchars($pagename);
             }
+			$subname = "";
+			if(isset($_GET["sub"])) {
+				$subname = $_GET["sub"];
+				$subname = htmlspecialchars($subname);
+			}
 
 
             if ($pagename == '') {
                 $pagename = "Home";
             }	
 		?>
-		<title><?php echo "$pagename - Team 2471"; ?></title>
-        <link href="default.css" rel="stylesheet" type="text/css">
+		<title><?php if($subname != ""){echo "$subname - Team 2471";} else{echo "$pagename - Team 2471";} ?></title>
+        <link href="/default.css" rel="stylesheet" type="text/css">
         
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<!-- <script src="scripts/jquery.min.js"></script> -->
 		<!-- <script type="text/javascript" src="scripts/sticky-kit.js"></script> -->
-        <script type="text/javascript" src="scripts/popup-script.js"></script>
+        <script type="text/javascript" src="/scripts/popup-script.js"></script>
 		<!-- <script type="text/javascript">
 			$(document).ready(function() {
 				$("#sidebar").stick_in_parent({parent : '#page-wrapper'});
@@ -34,7 +39,7 @@
 			<table id="logo" cellspacing="0" cellpadding="0">
 				<tr>
 					<td id="headerleft"></td>
-					<td id="headermiddle"><img src="images/MeanMachinelogo90px.png" alt="Mean Machine Logo" />
+					<td id="headermiddle"><img src="/images/MeanMachinelogo90px.png" alt="Mean Machine Logo" />
 						<h1><a href="index.php">FIRST Team 2471 Mean Machine</a></h1>
 						<br/>
 						<p><b>Robotics from Camas, Washougal, and Hockinson High Schools in Washington State</b></p>
@@ -48,11 +53,11 @@
 		<!--Menu-->
 		<div id="menu">
 			<ul>
-			   <li class='<?php if($pagename == "Home") echo "active";?>' ><a href='index.php?page=Home'><span>Home</span></a></li>
-			   <li class='<?php if($pagename == "About Us") echo "active";?>' ><a href='index.php?page=About%20Us'><span>About Us</span></a></li>
-			   <li class='<?php if($pagename == "Resources") echo "active";?>' ><a href='index.php?page=Resources'><span>Resources</span></a></li>
-			   <li class='<?php if($pagename == "Media Gallery") echo "active";?>' ><a href='index.php?page=Media%20Gallery'><span>Media Gallery</span></a></li>
-			   <li class='last, <?php if($pagename == "Sponsor") echo "active";?>'><a href='index.php?page=Sponsor'><span>Sponsor</span></a></li>
+			   <li class='<?php if($pagename == "Home") echo "active";?>' ><a href='/index.php?page=Home'><span>Home</span></a></li>
+			   <li class='<?php if($pagename == "About Us") echo "active";?>' ><a href='/index.php?page=About%20Us'><span>About Us</span></a></li>
+			   <li class='<?php if($pagename == "Resources") echo "active";?>' ><a href='/index.php?page=Resources'><span>Resources</span></a></li>
+			   <li class='<?php if($pagename == "Media Gallery") echo "active";?>' ><a href='/index.php?page=Media%20Gallery'><span>Media Gallery</span></a></li>
+			   <li class='last, <?php if($pagename == "Sponsor" || $pagename == "Sponsor Us") echo "active";?>'><a href='/index.php?page=Sponsor'><span>Sponsor</span></a></li>
 			</ul>
 			</div>
 		<!--End Menu-->        
@@ -84,6 +89,8 @@
                             include("pages/media_page.html");
                         } elseif($pagename == "Sponsor") {
                             include("pages/sponsor_page.html");
+                        } elseif($pagename == "Sponsor Us") {
+                        	include("pages/sponsor_us.html");
                         } elseif($pagename == "404") {
                         	include("pages/404.html");
                         } else {

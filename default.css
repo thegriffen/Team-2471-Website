@@ -216,7 +216,6 @@ a.fill-div {
     display: block;
     height: 100%;
     width: 100%;
-    text-decoration: none;
     margin: 0;
     padding: 0;
 }
@@ -225,7 +224,6 @@ a.fill-div {
 	text-align: center;
 	clear: both;
 	height: auto;
-	margin: 0 15px 0 0;
 }
 
 #home-first {
@@ -282,7 +280,11 @@ a.fill-div {
 	clear: both;
 	background-color: #a9a9a9;
 	height: auto;
-	margin: 0 0 0 15px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	box-shadow: 0 5px 5px #606060;
+	border-radius: 5px;
 }
 
 #calendar-block p {
@@ -308,8 +310,11 @@ a.fill-div {
 	text-align: center;
 	clear: both;
 	background-color: #B0E8B0;
-	height: 245px;
-	margin: 20px 0 0 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	box-shadow: 0 5px 5px #606060;
+	border-radius: 5px;
 }
 
 #first-column {
@@ -641,16 +646,142 @@ a.fill-div {
 	height: 300px;
 }
 
-img.center {
+.center {
 	display: block;
 	margin: 0 auto;
 }
 
-#team p {
+.about-content p {
 	padding: 10px 4.5%;
 }
 
-#team img {
+.about-content img {
 	padding: 10px 0;
 }
 
+.about-content ul {
+	margin-left: 4.5%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.about-content p.list {
+	padding-bottom: 0;
+}
+
+.robot-image {
+	float: left;
+}
+
+.robot-image img {
+	padding: 0;
+}
+
+.indented-info {
+	margin-left: 250px;
+	padding-left: 5px;
+}
+
+ul.spec-list li{
+	margin-left: 25px;
+	line-height: 200%;
+	text-align: left;
+}
+
+#sponsor-button {
+	width: 40%;
+}
+
+.sponsor-button {
+	font-size: 2.0em;
+	font-weight: bold;
+	box-shadow: 0 5px 5px #606060;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	height: 80px;
+	background-color: #890208;
+	color: #FFFFFF;
+}
+
+.sponsor-button a {
+	color: #FFFFFF;
+}
+
+.sponsor-button .text {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle
+}
+
+.sponsor-us {
+	box-shadow: 0 5px 5px #606060;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	height: auto;
+	background-color: #FFFFFF;
+}
+
+.sponsor-us-text {
+	padding: 10px;
+}
+
+.sponsor-us a {
+	color: #303030;
+}
+
+.sponsor-us h2 {
+	padding-top: 10px;
+	padding-bottom: 0;
+	margin: 0;
+}
+
+#sponsor-title {
+	float: left;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+#sponsor-title h1 {
+	font-weight: bold;
+}
+
+#sponsortable h1, #sponsortable h2 {
+	color: #FFFFFF;
+	margin: 0;
+	font-weight: normal;
+}
+
+#sponsortable h1 {
+	font-weight: bold;
+}
+
+#sponsortable h2 {
+	font-size: 1.0em;
+}
+
+.image-block {
+	height: auto;
+	border-radius: none;
+	box-shadow: none;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.image-block img.logo {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px #606060;
+}
+
+a.email {
+	color: #8C0209;
+}
